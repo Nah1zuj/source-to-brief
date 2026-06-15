@@ -1,0 +1,15 @@
+.DS_Store
+Thumbs.db
+
+node_modules/
+package-lock.json
+package.json
+
+output/
+tmp/
+.tmp*/
+.playwright*/
+.obsidian/
+
+*.traineddata
+*.log
