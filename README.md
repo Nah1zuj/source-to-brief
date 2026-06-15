@@ -2,13 +2,49 @@
 
 `source-to-brief` is an Open Design-oriented skill that turns substantial source materials into grounded Markdown research briefs.
 
-It is designed as a pre-artifact research layer: source material -> structured research brief -> downstream artifact. The generated brief can feed Open Design workflows such as decks, prototypes, PM specs, dashboards, decision rooms, and design briefs.
+It is designed as a pre-artifact research layer:
+
+```text
+source material -> structured research brief -> downstream artifact
+```
+
+The generated brief can feed Open Design workflows such as:
+
+- decks
+- prototypes
+- PM specs
+- dashboards
+- decision rooms
+- design briefs
 
 ## What It Does
 
-Use this skill when you need to digest PDFs, articles, reports, papers, interviews, transcripts, policy documents, product research, competitive material, or folders of sources before creating another artifact.
+Use this skill when you need to digest source material before creating another artifact.
 
-The primary output is `brief.md`. For mixed or citation-heavy source sets, the skill may also create `source-map.md`.
+Supported source material includes:
+
+- PDFs
+- articles
+- reports
+- papers
+- interviews
+- transcripts
+- policy documents
+- product research
+- competitive material
+- folders of sources
+
+The primary output is:
+
+```text
+brief.md
+```
+
+For mixed or citation-heavy source sets, the skill may also create:
+
+```text
+source-map.md
+```
 
 ## Output Shape
 
@@ -25,20 +61,28 @@ A typical brief includes:
 
 ## Open Design Fit
 
-This skill is meant to complement artifact-producing skills. It does not replace deck, prototype, PM spec, dashboard, or design-brief skills. Instead, it prepares grounded source intelligence for them.
+This skill complements artifact-producing skills.
+
+It does not replace deck, prototype, PM spec, dashboard, decision-room, or design-brief skills.
+
+Instead, it prepares grounded source intelligence for them.
 
 `SKILL.md` includes Open Design-oriented metadata:
 
 - concrete `triggers`
 - `od.mode`
+- `od.platform`
 - Markdown preview settings
 - example prompt
 - declared primary output
+- optional secondary output
 - required file-write capability
 
 ## Open Design Integration
 
-This repository is intended as an Open Design-oriented skill bundle. For an upstream Open Design PR, copy this skill folder into:
+This repository is intended as an Open Design-oriented skill bundle.
+
+For an upstream Open Design PR, copy this skill folder into:
 
 ```text
 skills/source-to-brief/
@@ -80,8 +124,24 @@ source-map.md
 
 Install this folder as a standalone skill folder in a compatible Codex, Claude Code, or Open Design skill environment.
 
-For Open Design collaboration, the main question is whether this should be classified as a `utility` skill, a `template` skill, or a community skill bundle.
+For Open Design collaboration, the main question is whether this should be classified as:
+
+- a `utility` skill
+- a `template` skill
+- a community skill bundle
 
 ## Quality Gates
 
-Before completion, the skill runs the P0 gates in `references/checklist.md`: source grounding, honest gaps, no fabricated citations or statistics, traceable downstream recommendations, clean Markdown preview, and verified output files.
+Before completion, the skill runs the P0 gates in `references/checklist.md`.
+
+Those gates check:
+
+- source grounding
+- clean Markdown preview
+- no fabricated citations
+- no fabricated statistics
+- clear source reconstruction
+- clear external supplementation boundaries
+- traceable downstream recommendations
+- useful reusable research brief output
+- verified output files

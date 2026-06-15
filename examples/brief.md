@@ -4,9 +4,25 @@ Reading path: product research packet; AI collaboration workflow; downstream art
 
 ## 1. Executive Orientation
 
-The source packet argues that small product teams lose decision context after meetings because notes are fragmented across transcripts, chat threads, task tools, and personal documents. The strongest opportunity is not "automatic transcription" by itself, but a workflow that turns meeting material into decisions, owners, risks, and follow-up prompts that product teams can reuse.
+The source packet argues that small product teams lose decision context after meetings.
 
-The material supports a product strategy deck or PM spec more strongly than a high-fidelity prototype. It contains clear pain points, user roles, workflow requirements, and adoption risks, but it does not yet include enough interaction detail to specify final screens.
+Notes are fragmented across transcripts, chat threads, task tools, and personal documents.
+
+The strongest opportunity is not automatic transcription by itself.
+
+The stronger opportunity is a workflow that turns meeting material into:
+
+- decisions
+- owners
+- risks
+- follow-up prompts
+- reusable source-linked context
+
+The material supports a product strategy deck or PM spec more strongly than a high-fidelity prototype.
+
+It contains clear pain points, user roles, workflow requirements, and adoption risks.
+
+It does not yet include enough interaction detail to specify final screens.
 
 Next artifact fit: deck, then PM spec.
 
@@ -24,15 +40,29 @@ External supplementation: not used.
 
 ### Claim A: The durable pain is decision memory, not raw note capture
 
-The interviews repeatedly describe the same failure pattern: a meeting ends with apparent alignment, but later teammates disagree about why a decision was made, what tradeoffs were accepted, or who owns the next step. This suggests the product should optimize for retrievable decision context.
+The interviews repeatedly describe the same failure pattern.
+
+A meeting ends with apparent alignment.
+
+Later, teammates disagree about why a decision was made, what tradeoffs were accepted, or who owns the next step.
+
+This suggests the product should optimize for retrievable decision context.
 
 ### Claim B: Summaries must become operational artifacts
 
-The workflow memo shows that teams do not want another note destination. They want notes that move into existing systems. The brief should therefore treat Slack, Linear, and shared docs as output surfaces rather than optional integrations.
+The workflow memo shows that teams do not want another note destination.
+
+They want notes that move into existing systems.
+
+The brief should therefore treat Slack, Linear, and shared docs as output surfaces rather than optional integrations.
 
 ### Claim C: Trust depends on source traceability
 
-The competitive scan implies that generic summaries are easy to produce and hard to trust. The product should expose the source moment behind important decisions, risks, and assigned actions. Unsupported details should be shown as `unknown` instead of being guessed.
+The competitive scan implies that generic summaries are easy to produce and hard to trust.
+
+The product should expose the source moment behind important decisions, risks, and assigned actions.
+
+Unsupported details should be shown as `unknown` instead of being guessed.
 
 ## 4. Product Implications
 
@@ -47,8 +77,10 @@ The competitive scan implies that generic summaries are easy to produce and hard
 
 - Teams may reject a new note surface even if they like the summary quality.
 - The source packet does not prove willingness to pay.
-- Privacy and recording consent are likely adoption blockers, but the supplied material does not quantify them.
+- Privacy and recording consent are likely adoption blockers.
+- The supplied material does not quantify privacy or consent concerns.
 - Accuracy expectations differ across decisions, tasks, and informal summaries.
+- Integration priority is still unknown.
 
 ## 6. Downstream Artifact Recommendations
 
@@ -61,14 +93,24 @@ For a product strategy deck:
 
 For a PM spec:
 
-- Define required outputs: decision log, action items, risk list, open questions, and source links.
-- Define non-goals: live meeting assistant, calendar scheduling, and generic knowledge base search.
+- Define required outputs.
+- Include a decision log.
+- Include action items.
+- Include a risk list.
+- Include open questions.
+- Include source links.
+- Define non-goals.
+- Exclude live meeting assistant behavior from the first version.
+- Exclude calendar scheduling from the first version.
+- Exclude generic knowledge base search from the first version.
 - Require an `unknown` state for unsupported details.
 
 For a prototype:
 
 - Start with post-meeting review, not live capture.
-- Prototype the flow from transcript to decision log to Linear/Slack export.
+- Prototype the flow from transcript to decision log.
+- Prototype export to Linear or Slack.
+- Show how a user checks the source behind a generated decision.
 
 ## 7. Reusable Content Blocks
 
@@ -86,7 +128,19 @@ Deck slide candidates:
 - "Summaries are not enough unless they become workflow objects"
 - "Trust comes from source-linked claims"
 
+Prototype scenario beat:
+
+- A PM opens a post-meeting review.
+- The assistant proposes three decisions and two open questions.
+- The PM expands a decision to inspect the source moment.
+- The PM exports the accepted decision to Linear and Slack.
+
 ## 8. References And Source Notes
 
-This brief is based only on the provided source packet. No external web or database research was added.
+This brief is based only on the provided source packet.
 
+No external web research was added.
+
+No database research was added.
+
+No claims, statistics, citations, dates, or source locations were inferred beyond the supplied material.
