@@ -3,8 +3,7 @@ name: source-to-brief
 zh_name: "Source to Brief"
 en_name: "Source to Brief"
 description: |
-  Turn substantial source materials into grounded Markdown research briefs for downstream Open Design artifacts.
-  Use when a user needs to digest PDFs, articles, reports, papers, interviews, transcripts, policy documents, product research, competitive material, or folders of sources before creating a deck, prototype, PM spec, dashboard, decision room, or design brief.
+  Turn substantial source materials into grounded Markdown research briefs for downstream Open Design artifacts. Use when a user needs to digest PDFs, articles, reports, papers, interviews, transcripts, policy documents, product research, competitive material, or folders of sources before creating a deck, prototype, PM spec, dashboard, decision room, or design brief.
 zh_description: "Converts source materials into Markdown research briefs for downstream design artifacts."
 en_description: |
   Converts long-form source material into a structured research brief that can feed decks, prototypes, product specs, dashboards, decision rooms, and other Open Design workflows.
@@ -18,14 +17,15 @@ triggers:
   - "material to brief"
   - "source packet to brief"
   - "report to product brief"
-
 od:
   mode: template
+  platform: desktop
   preview:
     type: markdown
     entry: brief.md
     reload: debounce-100
-  example_prompt: "Turn this mixed source packet into a research brief for a product strategy deck. Preserve key claims, evidence, open questions, and downstream artifact recommendations."
+  example_prompt: |
+    Turn this mixed source packet into a research brief for a product strategy deck. Preserve key claims, evidence, open questions, and downstream artifact recommendations.
   example_prompt_i18n:
     zh-CN: "Turn this source packet into a research brief for a product strategy deck, preserving claims, evidence, open questions, and downstream artifact recommendations."
   design_system:

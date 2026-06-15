@@ -36,6 +36,26 @@ This skill is meant to complement artifact-producing skills. It does not replace
 - declared primary output
 - required file-write capability
 
+## Open Design Integration
+
+This repository is intended as an Open Design-oriented skill bundle. For an upstream Open Design PR, copy this skill folder into:
+
+```text
+skills/source-to-brief/
+```
+
+The primary preview artifact is:
+
+```text
+brief.md
+```
+
+The optional secondary artifact is:
+
+```text
+source-map.md
+```
+
 ## Structure
 
 ```text
