@@ -2,6 +2,8 @@
 
 Reading path: synthetic policy excerpt + synthetic design memo -> compliance tradeoff -> decision-room
 
+Synthetic example: this brief uses a synthetic source packet and does not cite real policy text, jurisdictions, URLs, statistics, page numbers, or legal authorities.
+
 ## 1. Decision Context
 
 Support a decision room choosing between a persistent disclosure banner, a contextual consent step, or a settings-first approach.
@@ -37,6 +39,7 @@ Decision room:
 
 - Competing options: persistent banner, contextual consent step, settings-first disclosure.
 - Decision criteria: policy fit, user comprehension, workflow friction, implementation effort.
+- Evidence for each option: synthetic policy excerpt supports notice before action; synthetic design memo supports visibility for banner, timing fit for contextual consent, and low-friction review for settings-first.
 - Tradeoffs: banner maximizes visibility; contextual consent fits timing; settings-first is low friction but may be insufficient.
 - Risks: compliance interpretation is synthetic; no legal review or user testing supplied.
 - Unresolved questions: what exact policy jurisdiction applies; what data event triggers notice.

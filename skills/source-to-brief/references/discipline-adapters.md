@@ -15,7 +15,7 @@ Secondary philosophy structure:
 ## 2. Core Concepts And Distinctions
 ## 3. Thesis And Argument Reconstruction
 ## 4. Objections, Counterexamples, And Replies
-## 5. Scholarly Discussion
+## 5. Secondary Academic Context
 ## 6. Understanding Points
 ## References
 ```
@@ -32,9 +32,9 @@ Reading rules:
 - For ethics and political philosophy, track normative principles, cases, counterexamples, and application boundaries.
 - Evaluate only through concepts, argument structure, textual basis, or scholarly controversy; avoid personal reaction.
 
-## Course Notes And Primary-Text Courses
+## Secondary Academic And Primary-Text Sources
 
-Use this adapter for lecture sequences, textbook-based courses, classical-text courses, legal or canonical-text courses, and other recurring instructional materials.
+Use this adapter only when the user explicitly supplies lecture sequences, textbook-based sources, classical texts, legal or canonical texts, or other academic instructional materials.
 
 Secondary course-notes structure:
 
@@ -42,7 +42,7 @@ Secondary course-notes structure:
 ## 1. [First major problem or argument node]
 ## 2. [Next problem or argument node]
 ## 3. [Continue in the controlling source's order]
-## Scholarly Discussion
+## Secondary Academic Context
 ## Understanding Points
 ## References
 ```

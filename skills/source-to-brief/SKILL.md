@@ -28,7 +28,7 @@ outputs:
 triggers:
   - source to brief
   - source packet to brief
-  - research brief for deck
+  - design intelligence brief for deck
   - prepare sources for prototype
   - prepare sources for PM spec
   - summarize sources for design brief
@@ -136,20 +136,24 @@ Use the user's decision context, audience, downstream artifact target, language,
 
 ## Workflow
 
-1. Build the internal runtime contract from `references/runtime-contract.md`.
-2. Identify the downstream artifact and decision context.
-3. Read `references/artifact-contracts.md` before generating artifact recommendations.
-4. Prefer `references/design-workflow-adapters.md` for design, product, research, market, policy, technical, meeting-note, or competitor materials.
-5. Use `references/evidence-confidence.md` to label major insights where the source material supports doing so.
-6. Use `references/source-quality.md` to preserve the boundary between supplied evidence, model inference, external supplementation, and unsupported gaps.
-7. Use `references/material-type-structures.md` when source genre affects the reconstruction.
-8. Use `references/discipline-adapters.md` only as a secondary fallback for explicitly academic or discipline-heavy sources.
-9. If the material is a review, survey, field overview, handbook, encyclopedia entry, or literature-review article, also read `references/review-article-patterns.md`.
-10. Use `references/output-formats.md` to render portable Markdown.
-11. Draft `brief.md` using the default schema below.
-12. Create `source-map.md` when useful for mixed sources, citation-heavy packets, or downstream reuse.
-13. Run the P0 gates in `references/checklist.md`.
-14. Verify each declared output file exists.
+1. Establish the runtime contract from `references/runtime-contract.md`: supplied sources, downstream artifact target, decision context, output language, and depth.
+2. Identify the source packet type: user research, interviews/transcripts, competitor scan, market/business report, policy/compliance source, technical source, meeting notes/internal memo, or mixed source packet.
+3. Identify the downstream artifact target: deck, prototype, PM spec, dashboard, decision room, design brief, or other.
+4. Read `references/artifact-contracts.md` before generating artifact recommendations.
+5. Prefer `references/design-workflow-adapters.md` for design, product, research, market, policy, technical, meeting-note, competitor, or mixed-source workflows.
+6. Use academic or discipline adapters only when the user explicitly asks for academic interpretation or the supplied sources are primarily scholarly, literary, canonical, or discipline-heavy.
+7. Build the Source Inventory: source type, role, evidence strength, missing metadata, and reliability caveats.
+8. Extract Evidence-Backed Insights: insight, supporting evidence, confidence, design/product implication, and source gap.
+9. Use `references/evidence-confidence.md` and `references/source-quality.md` to preserve the boundary between supplied evidence, model inference, external supplementation, and unsupported gaps.
+10. Translate insights into the selected downstream artifact: deck storyline, prototype requirements, PM spec inputs, dashboard metrics, decision-room tradeoffs, design brief constraints, or another artifact-specific form.
+11. Use `references/material-type-structures.md` only when source genre affects the reconstruction.
+12. Use `references/discipline-adapters.md` only as a secondary fallback for explicitly academic or discipline-heavy sources.
+13. For explicitly academic or discipline-heavy review sources, such as a review, survey, field overview, handbook, encyclopedia entry, or literature-review article, use `references/review-article-patterns.md` only as a secondary source-genre aid.
+14. Use `references/output-formats.md` to render portable Markdown.
+15. Draft `brief.md` using the default schema below.
+16. Create `source-map.md` when the material is complex, multi-source, contradictory, long, citation-heavy, or likely to be reused downstream.
+17. Run the P0 gates in `references/checklist.md`: no fabricated citations, no fabricated statistics, no unsupported claims, external supplementation clearly separated, and portable Markdown output.
+18. Verify each declared output file exists.
 
 ## Default Brief Structure
 
@@ -162,20 +166,22 @@ Reading path: <source types> -> <decision context> -> <downstream artifact>
 
 ## 1. Decision Context
 
-What decision, design direction, or downstream artifact this brief is meant to support.
+State what decision, design direction, product question, or downstream artifact this brief is meant to support.
 
 ## 2. Source Inventory
 
-List source materials, source roles, and reliability notes.
+List the supplied source materials, their role in the brief, and any reliability limits.
 
 ## 3. Problem Frame
 
-Reconstruct the core user, product, market, business, policy, or technical problem from the sources.
+Reconstruct the core user, product, market, business, policy, or technical problem from the supplied sources.
 
 ## 4. Evidence-Backed Insights
 
 | Insight | Evidence | Confidence | Design / Product Implication | Source Gap |
 |---|---|---|---|---|
+
+Each major insight should distinguish what the source directly supports, what is inferred, and what remains unknown.
 
 ## 5. Opportunity Areas
 
@@ -187,7 +193,7 @@ Translate the brief into the selected downstream artifact.
 
 ## 7. Assumptions, Risks, And Unknowns
 
-Separate source-supported facts from assumptions and missing information.
+Separate source-supported facts from assumptions, weak signals, missing evidence, outdated material, and unresolved questions.
 
 ## 8. Reusable Blocks
 
@@ -204,13 +210,16 @@ For `deck`, include:
 
 - narrative thesis
 - 3-5 slide claims
-- strongest evidence
+- strongest supporting evidence
 - recommended storyline
+- caveats
 
 For `prototype`, include:
 
 - target user
 - scenario
+- user goal
+- pain point
 - core flow
 - required screens or states
 - interaction requirements
@@ -224,27 +233,30 @@ For `pm-spec`, include:
 - non-goals
 - constraints
 - success metrics
-- risks
+- risks and open questions
 
 For `dashboard`, include:
 
 - decision to monitor
-- metrics
+- key metrics
 - dimensions
 - data sources
-- cadence
-- caveats
+- update cadence
+- interpretation caveats
 
 For `decision-room`, include:
 
 - competing options
 - decision criteria
+- evidence for each option
 - tradeoffs
 - risks
 - unresolved questions
+- recommended next decision
 
 For `design-brief`, include:
 
+- background
 - audience
 - problem
 - goals

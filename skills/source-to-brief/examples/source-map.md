@@ -1,6 +1,6 @@
 # Source Map: Synthetic Product Strategy Packet
 
-This source map is a synthetic example. It demonstrates the optional `source-map.md` output for mixed packets.
+This source map is a synthetic example. It demonstrates the optional `source-map.md` output for mixed packets and does not cite real companies, users, policies, URLs, statistics, page numbers, or DOIs.
 
 | Source | Type | Role In Brief | Confidence | Reusable Claims | Gaps |
 |---|---|---|---|---|---|

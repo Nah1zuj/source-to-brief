@@ -2,6 +2,8 @@
 
 Reading path: synthetic meeting notes + synthetic analytics summary -> feature scope decision -> pm-spec
 
+Synthetic example: this brief uses a synthetic source packet and does not cite real metrics, URLs, statistics, page numbers, or internal systems.
+
 ## 1. Decision Context
 
 Support a PM spec for improving team invite controls without expanding the full permissions model.
@@ -42,7 +44,7 @@ PM spec:
 - Non-goals: full permissions redesign, custom role builder, org-wide policy engine.
 - Constraints: preserve current invite flow; no new billing model.
 - Success metrics: reduced high-access invite corrections; invite completion rate not worse than baseline.
-- Risks: role taxonomy may be insufficient; confirmation could add friction.
+- Risks and open questions: role taxonomy may be insufficient; confirmation could add friction; high-access role threshold still needs definition.
 
 ## 7. Assumptions, Risks, And Unknowns
 

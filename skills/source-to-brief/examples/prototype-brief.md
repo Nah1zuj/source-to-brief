@@ -2,6 +2,8 @@
 
 Reading path: synthetic interviews + synthetic support notes -> onboarding decision -> prototype
 
+Synthetic example: this brief uses a synthetic source packet and does not cite real users, URLs, statistics, page numbers, or research artifacts.
+
 ## 1. Decision Context
 
 Support a clickable prototype for users who abandon onboarding after connecting their first data source.
@@ -38,6 +40,8 @@ Prototype:
 
 - Target user: workspace admin connecting a first data source.
 - Scenario: user pauses after permission prompt and returns later.
+- User goal: connect the first source with enough clarity to trust the permission request.
+- Pain point: the flow asks for access before explaining scope, next step, or recovery path.
 - Core flow: start setup -> review permissions -> connect source -> see progress -> recover incomplete setup.
 - Required screens/states: permission preview, connection progress, paused setup, recovery checklist, success state.
 - Interaction requirements: clear resume action, visible next step, reversible permission explanation.

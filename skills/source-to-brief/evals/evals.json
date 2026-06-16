@@ -4,7 +4,7 @@
     {
       "id": "onboarding-prototype-brief",
       "prompt": "Turn a packet of user interviews and support notes into a standard English Markdown brief for an onboarding prototype. Use only the supplied packet.",
-      "expected_output": "A saved brief.md that identifies prototype as the downstream artifact target, follows the predictable brief schema, separates source evidence from assumptions, labels confidence where useful, includes prototype-specific reusable blocks, and does not fabricate source details.",
+      "expected_output": "A saved brief.md that identifies prototype as the downstream artifact target, follows the predictable Design Intelligence Brief schema, separates source evidence from assumptions, labels confidence where useful, includes prototype-specific reusable blocks, and does not fabricate source details.",
       "files": []
     },
     {

@@ -49,7 +49,6 @@ The brief should provide:
 - dimensions
 - data sources
 - update cadence
-- alert conditions
 - interpretation caveats
 
 ## Decision Room

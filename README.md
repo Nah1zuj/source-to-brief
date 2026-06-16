@@ -1,11 +1,11 @@
 # Source to Brief
 
-`source-to-brief` is a portable Open Design community skill that turns messy source materials into source-grounded, artifact-ready Markdown briefs.
+`source-to-brief` is a portable Open Design pre-artifact research layer that turns messy source materials into source-grounded, artifact-ready Design Intelligence Briefs.
 
 It is designed for the stage before artifact generation:
 
 ```text
-source materials -> source-grounded brief -> downstream Open Design artifact
+source materials -> Design Intelligence Brief -> downstream Open Design artifact
 ```
 
 ## What It Does
@@ -29,7 +29,7 @@ Optional secondary output:
 
 - `source-map.md`
 
-## Output Schema
+## Design Intelligence Brief Schema
 
 The default `brief.md` should include:
 

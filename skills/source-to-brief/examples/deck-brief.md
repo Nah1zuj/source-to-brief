@@ -2,6 +2,8 @@
 
 Reading path: synthetic competitor scan + synthetic market memo -> leadership narrative -> deck
 
+Synthetic example: this brief uses a synthetic source packet and does not cite real companies, URLs, statistics, page numbers, or DOIs.
+
 ## 1. Decision Context
 
 Support a product strategy deck deciding whether to reposition the onboarding experience around time-to-first-value instead of feature breadth.
@@ -39,6 +41,7 @@ Deck:
 - Slide claims: category parity is high; setup confidence differentiates; migration concerns block purchase; activation proof can reduce perceived risk.
 - Strongest evidence: competitor scan pattern plus recurring synthetic sales objections.
 - Recommended storyline: market sameness -> buyer anxiety -> onboarding confidence -> proof plan -> decision ask.
+- Caveats: no conversion data, buyer interviews, or win/loss analysis were supplied.
 
 ## 7. Assumptions, Risks, And Unknowns
 

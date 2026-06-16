@@ -12,7 +12,7 @@ The source packet may contain interviews, support notes, competitor scans, marke
 - Produces portable Markdown.
 - Saves the primary output as `brief.md` by default.
 - Creates optional `source-map.md` when the packet is mixed, citation-heavy, or reusable.
-- Follows the predictable brief schema:
+- Follows the predictable Design Intelligence Brief schema:
   - Decision Context
   - Source Inventory
   - Problem Frame

@@ -1,17 +1,53 @@
-# Source Quality
+# Source Quality For Design Intelligence Briefs
 
-Use source quality to decide how strongly a claim can travel into a downstream artifact. The brief should preserve the difference between:
+The brief must preserve the difference between:
 
 1. supplied-source evidence
-2. model inference
+2. model inference, clearly labeled as inference rather than evidence
 3. optional external supplementation
 4. unsupported gaps
 
-## Design Evidence First
+## Design Evidence Priority
+
+### High Confidence
+
+- repeated user interview patterns
+- observed user behavior
+- analytics data
+- customer support logs
+- verified internal metrics
+- official policy documentation
+- official technical documentation
+- direct source excerpts with stable location
+
+### Medium Confidence
+
+- small-sample interviews
+- stakeholder statements
+- credible market or industry reports
+- competitor feature scans
+- meeting notes
+- sales or customer-success anecdotes with partial detail
+
+### Low Confidence
+
+- vendor claims
+- unsourced slides
+- single anecdote
+- speculative strategy memo
+- model inference, clearly labeled as inference rather than evidence
+- outdated market data
+- search snippets
+
+## Rule
+
+Do not present low-confidence material as a strong design conclusion. Label it as an assumption, weak signal, hypothesis, or open question.
+
+## Evidence Types
 
 User evidence:
 
-- interviews, transcripts, diary studies, surveys, usability sessions, field notes, and research notes
+- interviews, transcripts, diary studies, surveys, usability sessions, field notes, user-research notes, and product-discovery notes
 - Strongest when patterns repeat across users or when quotes have stable attribution inside the supplied material
 
 Behavioral evidence:
@@ -49,37 +85,30 @@ External web supplementation:
 - Use only when requested or approved, except when needed to verify a user-requested current fact
 - Keep it separate from supplied sources and cite links used
 
-## Source Priority
+## Academic Or Scholarly Sources
 
-High priority:
+Use academic or scholarly source hierarchy only as a secondary mode when the user explicitly asks for academic interpretation or the supplied materials are primarily scholarly.
 
-- user-provided source material
-- repeated user evidence
-- observed behavior or verified analytics
-- official policy or technical documentation
-- clearly identified internal metrics or primary product materials
-- direct source excerpts with stable location
+Higher-confidence scholarly materials include:
 
-Medium priority:
+- user-provided primary texts, papers, books, datasets, or reading packets
+- peer-reviewed journal articles
+- academic books and book chapters
+- university press publications
+- official reports from universities, labs, think tanks, or public agencies
+- conference papers in fields where they are primary venues
+- official documentation or technical reports for technical systems
 
-- small-sample interviews
-- stakeholder statements
-- credible industry or market reports
-- competitor feature scans
-- meeting notes
-- sales or success anecdotes with partial detail
-- working papers, official reports, or conference papers when relevant
+Lower-confidence scholarly-adjacent materials include:
 
-Low priority:
+- general encyclopedias
+- blogs
+- media articles
+- vendor white papers
+- unsourced slide decks
+- search snippets
 
-- vendor claims
-- unsourced slides
-- single anecdotes
-- speculative strategy memos
-- outdated market data
-- general encyclopedias, blogs, media pieces, and search snippets
-
-Low-priority sources may provide leads, weak signals, or open questions. They should not anchor strong design conclusions.
+These sources may provide context, but they should not override the design evidence priority when the brief is preparing a downstream Open Design artifact.
 
 ## Citation And Attribution Rules
 
@@ -98,7 +127,7 @@ Source reconstruction extracts, organizes, and preserves what the supplied mater
 
 External supplementation adds context beyond the supplied materials. It can clarify or verify context, but it must not overwrite the source's own claims.
 
-Unsupported gaps should remain visible as gaps. Use labels such as `unknown`, `not supplied`, `weak signal`, or `requires verification`.
+Unsupported gaps should remain visible as gaps. Use labels such as `unknown`, `not supplied`, `weak signal`, `hypothesis`, or `requires verification`.
 
 ## Forbidden Behaviors
 
