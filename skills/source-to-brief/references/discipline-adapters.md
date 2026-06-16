@@ -1,12 +1,14 @@
 # Discipline Adapters
 
-Use these adapters to adjust the material-type structure. The skill can handle any discipline; if no exact adapter exists, infer the closest pattern from the material's concepts, methods, evidence, and audience.
+Use these adapters only as a secondary fallback for explicitly academic, scholarly, literary, canonical, legal, or discipline-heavy sources. For design, product, research, market, policy, technical, competitor, or meeting-note workflows, prefer `design-workflow-adapters.md`.
+
+When using a discipline adapter, still translate the result into the default design intelligence brief and the selected downstream artifact contract. Do not let discipline-specific structure turn the output into ordinary academic notes.
 
 ## Philosophy
 
 Philosophy materials are not handled as information summaries. Their center is the relation between problems, concepts, arguments, objections, replies, textual basis, and interpretive traditions.
 
-Default philosophy structure:
+Secondary philosophy structure:
 
 ```markdown
 ## 1. Problem
@@ -34,7 +36,7 @@ Reading rules:
 
 Use this adapter for lecture sequences, textbook-based courses, classical-text courses, legal or canonical-text courses, and other recurring instructional materials.
 
-Default structure:
+Secondary course-notes structure:
 
 ```markdown
 ## 1. [First major problem or argument node]
@@ -50,7 +52,7 @@ Reading rules:
 - Let the lecture or syllabus define the session boundary, but let the most coherent source control the internal order when the slide order is only presentational.
 - If the user designates a primary textbook, monograph, article, statute, canonical text, or reading packet as the main line, extract its section order, main claim, subclaims, textual/evidential basis, reasoning steps, and tensions before drafting.
 - Keep classroom examples, slide bullets, and local notes as examples or emphasis within the relevant argument node.
-- Do not write the final note as a report about source handling. Make the concept, problem, author, institution, method, or historical process the grammatical subject.
+- Do not write the final brief as a report about source handling. Make the concept, problem, author, institution, method, or historical process the grammatical subject.
 - If short primary-source quotations are useful, place them inside the relevant explanation and immediately explain how the quoted wording advances the concept or argument.
 - Use section summaries, concept tables, or diagrams only where they genuinely reduce cognitive load.
 

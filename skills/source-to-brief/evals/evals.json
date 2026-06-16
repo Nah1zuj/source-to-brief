@@ -1,0 +1,35 @@
+{
+  "skill_name": "source-to-brief",
+  "evals": [
+    {
+      "id": "onboarding-prototype-brief",
+      "prompt": "Turn a packet of user interviews and support notes into a standard English Markdown brief for an onboarding prototype. Use only the supplied packet.",
+      "expected_output": "A saved brief.md that identifies prototype as the downstream artifact target, follows the predictable brief schema, separates source evidence from assumptions, labels confidence where useful, includes prototype-specific reusable blocks, and does not fabricate source details.",
+      "files": []
+    },
+    {
+      "id": "strategy-deck-brief",
+      "prompt": "Turn a competitor scan and market report into a concise Markdown brief for a product strategy deck.",
+      "expected_output": "A saved brief.md that includes a narrative thesis, 3-5 evidence-backed slide claims, strongest evidence, recommended storyline, confidence labels, caveats, and Source Notes separating supplied evidence from any optional supplementation.",
+      "files": []
+    },
+    {
+      "id": "compliance-design-brief",
+      "prompt": "Turn a policy document into a compliance-aware design brief without external web research.",
+      "expected_output": "A saved brief.md that identifies design-brief as the downstream artifact target, preserves rules and constraints, labels unknowns, avoids legal overreach, marks external supplementation as not used, and does not invent citations, URLs, page numbers, or quotes.",
+      "files": []
+    },
+    {
+      "id": "pm-spec-brief",
+      "prompt": "Turn meeting notes and an analytics summary into a PM spec brief with requirements, non-goals, risks, and open questions.",
+      "expected_output": "A saved brief.md that identifies pm-spec as the downstream artifact target, includes problem statement, user stories, functional requirements, non-goals, constraints, success metrics, risks, confidence labels, and traceable source evidence.",
+      "files": []
+    },
+    {
+      "id": "ai-feature-prototype-brief",
+      "prompt": "Turn a technical paper and product memo into an AI feature prototype brief.",
+      "expected_output": "A saved brief.md that identifies prototype as the downstream artifact target, separates technical capability from product assumption, includes required screens or states, interaction requirements, testable assumptions, feasibility caveats, and no fabricated benchmark or source details.",
+      "files": []
+    }
+  ]
+}

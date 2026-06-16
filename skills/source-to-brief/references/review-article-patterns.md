@@ -4,7 +4,7 @@ Use this reference when the material is a review, survey, state-of-the-art artic
 
 ## Do Not Summarize Source by Source
 
-A good review note should not become a list of "A said, B said, C said." It should explain how the article organizes a field.
+A good review brief should not become a list of "A said, B said, C said." It should explain how the article organizes a field.
 
 Ask:
 

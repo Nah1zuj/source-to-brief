@@ -1,147 +1,66 @@
 # Source to Brief
 
-`source-to-brief` is an Open Design-oriented skill that turns substantial source materials into grounded Markdown research briefs.
+`source-to-brief` is a portable Open Design community skill that turns messy source materials into source-grounded, artifact-ready Markdown briefs.
 
-It is designed as a pre-artifact research layer:
+It is designed for the stage before artifact generation:
 
 ```text
-source material -> structured research brief -> downstream artifact
+source materials -> source-grounded brief -> downstream Open Design artifact
 ```
-
-The generated brief can feed Open Design workflows such as:
-
-- decks
-- prototypes
-- PM specs
-- dashboards
-- decision rooms
-- design briefs
 
 ## What It Does
 
-Use this skill when you need to digest source material before creating another artifact.
+Use this skill when a user has PDFs, reports, interviews, transcripts, policy documents, product research, competitor materials, meeting notes, or mixed source folders and needs to prepare them for:
 
-Supported source material includes:
+- deck
+- prototype
+- PM spec
+- dashboard
+- decision room
+- design brief
 
-- PDFs
-- articles
-- reports
-- papers
-- interviews
-- transcripts
-- policy documents
-- product research
-- competitive material
-- folders of sources
+## What It Produces
 
-The primary output is:
+Primary output:
 
-```text
-brief.md
-```
+- `brief.md`
 
-For mixed or citation-heavy source sets, the skill may also create:
+Optional secondary output:
 
-```text
-source-map.md
-```
+- `source-map.md`
 
-## Output Shape
+## Output Schema
 
-A typical brief includes:
+The default `brief.md` should include:
 
-- executive orientation
-- source map
-- core claims and evidence
-- product, market, policy, user, or technical implications
-- tensions, unknowns, and risks
-- downstream artifact recommendations
-- reusable content blocks
-- references and source notes
+1. Decision Context
+2. Source Inventory
+3. Problem Frame
+4. Evidence-Backed Insights
+5. Opportunity Areas
+6. Artifact Translation
+7. Assumptions, Risks, and Unknowns
+8. Reusable Blocks
+9. Source Notes
 
 ## Open Design Fit
 
-This skill complements artifact-producing skills.
+This skill does not replace artifact-producing skills. It prepares grounded source intelligence for them.
 
-It does not replace deck, prototype, PM spec, dashboard, decision-room, or design-brief skills.
+## Portable Skill Shape
 
-Instead, it prepares grounded source intelligence for them.
-
-`SKILL.md` includes Open Design-oriented metadata:
-
-- concrete `triggers`
-- `od.mode`
-- `od.platform`
-- Markdown preview settings
-- example prompt
-- declared primary output
-- optional secondary output
-- required file-write capability
-
-## Open Design Integration
-
-This repository is intended as an Open Design-oriented skill bundle.
-
-For an upstream Open Design PR, copy this skill folder into:
+The intended Open Design path is:
 
 ```text
-skills/source-to-brief/
+skills/source-to-brief/SKILL.md
 ```
 
-The primary preview artifact is:
+with local references, examples, and evals.
 
-```text
-brief.md
-```
+## Quality Principles
 
-The optional secondary artifact is:
-
-```text
-source-map.md
-```
-
-## Structure
-
-```text
-.
-|-- SKILL.md
-|-- examples/
-|   `-- brief.md
-|-- evals/
-|   |-- basic_acceptance.md
-|   `-- evals.json
-`-- references/
-    |-- checklist.md
-    |-- discipline-adapters.md
-    |-- material-type-structures.md
-    |-- output-formats.md
-    |-- review-article-patterns.md
-    |-- runtime-contract.md
-    `-- source-quality.md
-```
-
-## Installation
-
-Install this folder as a standalone skill folder in a compatible Codex, Claude Code, or Open Design skill environment.
-
-For Open Design collaboration, the main question is whether this should be classified as:
-
-- a `utility` skill
-- a `template` skill
-- a community skill bundle
-
-## Quality Gates
-
-Before completion, the skill runs the P0 gates in `references/checklist.md`.
-
-Those gates check:
-
-- source grounding
-- clean Markdown preview
-- no fabricated citations
-- no fabricated statistics
-- clear source reconstruction
-- clear external supplementation boundaries
-- traceable downstream recommendations
-- useful reusable research brief output
-- verified output files
+- Keep outputs source-grounded.
+- Do not fabricate citations, statistics, authors, URLs, page numbers, or quotes.
+- Separate supplied-source reconstruction from optional external supplementation.
+- Keep Markdown preview-friendly.
+- Avoid heavy external runtime assumptions.
